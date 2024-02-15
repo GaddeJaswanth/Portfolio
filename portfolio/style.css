@@ -171,3 +171,66 @@ body{
 .home-sci a:hover::before{
     width: 100%;
 }
+#profile {
+    position: relative;
+    top: 30px;
+    left: 200px;
+    height: 600px;
+}
+.heading{
+    font-size: 3rem;
+    padding: 20px;
+}
+.education{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    padding-bottom: 4rem;
+}
+.education .education-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:4rem;
+}
+.education-row .education-column{
+    flex:1 1 40rem;   
+}
+.education-column .title{
+    font-size: 2.4rem;
+    margin:0 0 1.4rem 2rem;
+}
+
+.education-column.education-content{
+    position: relative;
+    padding-left: 2rem;
+}
+
+.education-content .content{
+    position: relative;
+    padding: 1.5rem;
+    border: .2rem solid #24a9f1;
+    border-radius: .6rem;
+    margin-bottom: 2rem;
+}
+.education-content .content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #24a9f1;
+    z-index: -1;
+    transition: .5s;
+}
+.education-content .content:hover::before{
+    width: 100%;
+}
+.education-content .content .year{
+    font-size: 1rem;
+    color: #24a9f1;
+    padding-bottom: .4rem;
+}
